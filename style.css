@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+}
+
+.logo-dch {
+    height: 200px;
+    margin: 10px;
+    
+}
+
+.homem-robo {
+   
+    height: 500px;
+   
+}
+button {
+    height: 50px;
+    width: 200px;
+    color: white;
+    background-color: #22a5fc;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.div-mae{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    height: 100vh;
+
+}
+body {
+    height: 100vh;
+
+   }
+
+ 
+.div-video{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+
+}
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    
+    
+}
+.mascara {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+.mapa{
+    display: flex;
+    position: relative;
+    left: 5%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 10px;
+}
+
+.caixa-de-localização{
+    background-image: white;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+   
+
+}
+.botao-whats{
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.botao-face{
+    height: 80px;
+    position: fixed;
+    right: -1%;
+    bottom: 85px;
+}
+.botao-insta{
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 170px;
+}
+
+.header img{
+    width: 70px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 3px;
+   
+    
+}
+.header a {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    gap: 50px;
+    top: 0px;
+     text-decoration: none;
+}
+.header a:hover{
+    color:#22a5fc;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+}
+.header button {
+    margin-left: 45%;
+}
+.formulario-fale-conosco{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    left: -22%;
+    border-radius: 5px;
+    padding: 20px;
+    position: fixed;
+    gap: 20px;
+    transition: left 0.6s ease-in-out;
+}
+input{
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 40px;
+    padding-left: 5px;
+    outline-color: #0306c2
+    
+}
+textarea{
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 100px;
+    width: 270px;
+    padding-left: 5px;
+    outline-color: #0306c2;
+}
+.mascara-formulario{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 0.6s ease-in-out;
+}
