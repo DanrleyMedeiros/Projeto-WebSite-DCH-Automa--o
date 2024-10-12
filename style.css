@@ -30,6 +30,9 @@
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 30px;
+    position: fixed;
+    right: 5%;
+    top: 2%;
 }
 
 .chama-formulario:hover {
@@ -87,6 +90,7 @@ video {
     margin-top: 30px;
     margin-bottom: 20px;
     width: 10px;
+    visibility: visible;
 }
 
 .caixa-de-localização {
@@ -99,24 +103,26 @@ p {
     line-height: 25px;
 }
 
-.chama-formulario {
-    position: fixed;
-    right: 5%;
-    top: 2%;
-}
+
 
 .volta-formulario {
     background-color: rgba(255, 255, 255, 0);
     display: flex;
-    top: 20%;
-    left: 90%;
+    top: 73%;
+    left: 150%;
     border: 0;
     position: fixed;
     transition: left 0.6s ease-in-out;
     cursor: pointer;
+    font-size: 100px;
+    color: #22a5fc;
 }
 
+.volta-formulario:hover {
+    color: #74b4df;
+    font-size: 105px;
 
+}
 
 .paragrafo {
 
@@ -243,15 +249,19 @@ h1 {
 }
 
 .mapa {
+    height: 400px;
+    width: 300px;
+    left: 30%;
     display: flex;
-    width: 10px;
 }
 
 .div-info {
-    width: 60%;
+
+    width: 70%;
     margin-top: 30px;
-    margin-left: 30px;
-    text-align: center;
+    margin-right: 110px;
+    text-align: justify;
+    right: 60%;
 }
 
 .container2 {
@@ -261,4 +271,94 @@ h1 {
     padding: 100px;
     height: 100vh;
     gap: 20%;
+}
+
+@media (max-width: 1200px) {
+    .chama-formulario {
+        position: fixed;
+        right: 5%;
+        top: 0%;
+    }
+
+    .formulario-fale-conosco {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        top: 30%;
+        left: -75%;
+        border-radius: 5px;
+        padding: 20px;
+        position: fixed;
+        gap: 20px;
+        transition: left 0.6s ease-in-out;
+    }
+
+    .imagem-entregador {
+        position: relative;
+        right: 30%;
+        top: 0%;
+        margin: 0;
+    }
+
+    .paragrafo {
+       
+        width: 300px;
+
+    }
+
+    .botao-face {
+        height: 60px;
+
+        right: -3.5%;
+
+    }
+
+    .botao-whats {
+        height: 45px;
+        position: fixed;
+        right: 15px;
+        bottom: 20px;
+    }
+
+    .botao-insta {
+        height: 43px;
+        position: fixed;
+        right: 15px;
+        bottom: 165px;
+    }
+
+    .volta-formulario {
+        top: 17%;
+        font-size: 80px;
+    }
+
+
+    .chama-formulario {
+        height: 50px;
+        width: 200px;
+        color: white;
+        background-color: #22a5fc;
+        border-radius: 3px;
+        border: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-top: 0px;
+        position: fixed;
+        right: 30%;
+        top: 90%;
+
+    }
+
+    .div-sobre {
+        
+        width: 400px;
+        margin-top: 0;
+        margin-left: 0px;
+        top: 40%;
+        right: 30%;
+        text-align: center;
+    }
+    
+    
 }
